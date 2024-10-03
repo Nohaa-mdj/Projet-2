@@ -427,12 +427,30 @@ a {
     min-height: auto;
 }
 
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    overflow-x: auto; 
+}
+
 .hebergements-and-populaires .hebergement {
     padding: 10px;
 }
 
 .hebergements-and-populaires .populaires {
     padding: 10px;
+}
+
+.hebergements {
+    flex: 1; 
+    min-width: 350px; 
+    margin-right: 20px; 
+}
+
+.populaires {
+    flex: 1; 
+    min-width: 350px;
 }
 
 .populaires-title {
@@ -599,6 +617,17 @@ footer {
     }
 
     .hebergements {
+        flex: 1; 
+        min-width: 350px; 
+        margin-right: 20px; 
+    }
+    
+    .populaires {
+        flex: 1; 
+        min-width: 350px;
+    }
+
+    .hebergements {
         width: 60%;
     }
 
@@ -636,8 +665,10 @@ footer {
     }
 
     .hebergements, .populaires {
+        min-width: 100%;
         height: auto;
         min-height: 300px;
+        margin-bottom: 20px;
     }
 
     .section-title {
@@ -650,6 +681,7 @@ footer {
     }
 
     .main-container {
+        flex-direction: column;
         padding: 0 20px;
         width: 100%;
         margin: 0 auto;
@@ -666,6 +698,13 @@ footer {
         overflow-x: hidden;
     }
 
+    @media (max-width: 768px) { 
+        nav {
+            justify-content: center; 
+            margin-right: 0; 
+        }
+    }
+
 
     .hebergements-and-populaires{
         flex-direction: column;
@@ -673,11 +712,25 @@ footer {
         width: 100%;
     }
 
+    .hebergements {
+        flex: 1;
+        min-width: 400px;
+    }
+
+    .populaires{
+        flex: 1;
+        min-width: 300px;
+    }
+
+
+
     .hebergements,
     .populaires {
         width: 100%; 
         margin-top: 20px;
         box-sizing: border-box;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
     }
 
     .main-container {
@@ -692,6 +745,18 @@ footer {
         max-width: 100%;
         height: auto;
         max-height: 180px; 
+    }
+
+    .cards-content {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+
+    .cards {
+        flex: 1 1 30%; 
+        max-width: 300px; 
+        margin: 10px; 
     }
 
     .section-title {

@@ -54,6 +54,7 @@ nav {
 }
 
 .info i {
+    background-color: white;
     color: #007bff;
     margin-right: 8px;
 }
@@ -458,6 +459,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
 }
 
 .populaires-cards .cards {

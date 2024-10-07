@@ -32,18 +32,40 @@ header {
     width: 100px;
 }
 
-nav {
-    position: relative;
-    top: 0px;
-    left: 1150px;
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end; 
-    gap: 2rem; 
-    margin-right: 2%; 
+p {
+    display: block;
+    margin-block-end: 1em;
+    margin-block-start: 0.4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
+
+
+.menu-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 30px; 
+  }
+  
+  .menu-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000; 
+    font-weight: 500; 
+  }
 
 
 .info {
@@ -68,16 +90,23 @@ nav {
     margin-bottom: 20px;
 }
 
+
 .search-container input{
     flex-grow: 1;
     min-width: 200px; 
+    background-color: #fff; 
+    border: none;
+    outline: none;
+    padding: 10px; 
+    flex: 1; 
+    border-radius: 10px 0 0 10px;
 }
 
 .search-container {
     display: flex;
     align-items: center;
     background-color: #f0f0f0;
-    border-radius: 30px;
+    border-radius: 15px;
     padding: 5px 15px;
     max-width: 450px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -86,14 +115,13 @@ nav {
 
 .search-container input {
     border: none;
-    padding: 10px 0 10px 10px;
-    border-radius: 30px;
+    border-radius: 0px;
     outline: none;
     flex-grow: 1;
     font-size: 18px;
     font-weight: bold;
     color: black;
-    background-color: transparent;
+    background-color: white;
 }
 
 .search-container .location-icon {
@@ -113,13 +141,13 @@ nav {
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 15px;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
   }
 
   .search-container button:hover {
@@ -130,6 +158,7 @@ nav {
     color: #333; 
     opacity: 1; 
   }
+
 
 .info {
     margin-top: 10px;
@@ -521,11 +550,10 @@ a {
     flex-direction: column;
     max-width: 250px;
     border: 1px solid #ccc; 
-    border-radius: 10px; 
+    border-radius: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden; 
     text-align: center; 
-    padding: 10px; 
 }
 
 

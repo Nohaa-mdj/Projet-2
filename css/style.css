@@ -99,7 +99,6 @@ p {
     border: none;
     outline: none;
     padding: 10px; 
-    flex: 1; 
     border-radius: 10px 0 0 10px;
 }
 
@@ -142,7 +141,7 @@ p {
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 0 20px 20px 0;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
@@ -176,7 +175,7 @@ p {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     gap: 30px;
   }
 
@@ -461,6 +460,7 @@ a {
     margin: 0;
     min-height: auto;
 }
+
 
 .hebergements-and-populaires {
     display: flex;

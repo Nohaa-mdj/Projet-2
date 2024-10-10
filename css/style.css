@@ -99,15 +99,14 @@ p {
     border: none;
     outline: none;
     padding: 10px; 
-    border-radius: 10px 0 0 10px;
 }
 
 .search-container {
     display: flex;
+    border: none;
     align-items: center;
     background-color: #f0f0f0;
     border-radius: 15px;
-    padding: 5px 15px;
     max-width: 450px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -115,7 +114,6 @@ p {
 
 .search-container input {
     border: none;
-    border-radius: 0px;
     outline: none;
     flex-grow: 1;
     font-size: 18px;
@@ -128,7 +126,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 10px;
+    padding-right: 20px;
+    padding-left: 20px;;
   }
 
   .search-container .location-icon i {
@@ -141,7 +140,7 @@ p {
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 12px 12px 0;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;

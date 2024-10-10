@@ -109,13 +109,13 @@ p {
     background-color: #f0f0f0;
     border-radius: 15px;
     max-width: 450px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
 .search-container input {
     border: none;
-    outline: none;
+    outline: #f0f0f0;
+    margin: 1px;
     flex-grow: 1;
     font-size: 18px;
     font-weight: bold;
@@ -720,6 +720,14 @@ footer {
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
+    }
+}
+
+/*Entre 1024 et 1220px*/
+
+@media (max-width: 1220px) and (min-width: 1024px) {
+    .activities-card {
+        flex: 1 1 24%; 
     }
 }
 

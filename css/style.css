@@ -723,11 +723,16 @@ footer {
     }
 }
 
-/*Entre 1024 et 1220px*/
+/*Entre 1020 et 1217px*/
 
-@media (max-width: 1220px) and (min-width: 1024px) {
-    .activities-card {
-        flex: 1 1 24%; 
+@media (max-width: 1220px) and (min-width: 1020px) {
+    .activites-grid-container {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+
+    .activites-card {
+        max-width: 260px;
+        margin: 0 auto; 
     }
 }
 

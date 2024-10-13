@@ -642,7 +642,7 @@ footer {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media all and (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 769px) {
 
 .hebergements-and-populaires {
     display: flex;
@@ -654,16 +654,13 @@ footer {
 
 .hebergements {
     flex: 1; 
-    min-width: 350px; 
+    min-width: 100%; 
+    flex-direction: column;
 }
     
 .populaires {
     flex: 1; 
-    min-width: 350px;
-}
-
-.hebergements {
-    width: 60%;
+    min-width: 100%;
 }
 
 .cards {
@@ -677,7 +674,7 @@ footer {
     justify-content: space-between;
     min-height: 200px;
     height: auto;
-     margin-top: 20px;
+    margin-top: 20px;
 }
 
 
@@ -747,7 +744,44 @@ img, section {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) { 
 
-.activite-card {
+.search-section {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px 0; 
+}
+
+.logo {
+    font-size: 3em; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.menu-container a {
+    text-decoration: none; 
+    color: black; 
+    font-size: 1.2em; 
+}
+
+.h1 {
+    display: inline-block;
+    max-width: 25ch;
+    white-space: normal;
+}
+
+
+.activites-card {
     justify-content: center; 
     margin-right: 0; 
 }
@@ -762,7 +796,6 @@ img, section {
 
 .filters h2 {
     font-size: 24px;
-    margin-bottom: 10px;
     color: black;
     text-align: left;
 }
@@ -770,10 +803,12 @@ img, section {
 .filter-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     gap: 10px;
 }
 
 .hebergements-and-populaires{
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;

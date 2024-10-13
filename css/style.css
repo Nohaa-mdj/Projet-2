@@ -53,6 +53,7 @@ p {
 }
 
 
+
 .menu-container {
     position: absolute;
     top: 20px;
@@ -60,6 +61,7 @@ p {
     display: flex;
     gap: 30px; 
 }
+
 
 .menu-container a:hover {
     border-top: 1.5px solid #0065FC;
@@ -712,7 +714,6 @@ footer {
 
 img, section {
     max-width: 100%;
-    height: auto;
 }
 
 .main-container {
@@ -765,7 +766,8 @@ header {
 .menu-container {
     display: flex;
     justify-content: center; 
-    gap: 20px; 
+    gap: 40px;
+    margin-top: 0; 
 }
 
 .menu-container a {
@@ -777,7 +779,7 @@ header {
 .h1 {
     display: inline-block;
     max-width: 25ch;
-    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 
@@ -815,8 +817,23 @@ header {
 }
 
 .hebergements {
-    flex: 1;
-    min-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    max-width: 250px; 
+    margin-bottom: 20px;
 }
 
 .populaires{

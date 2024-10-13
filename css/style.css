@@ -764,10 +764,12 @@ header {
 }
 
 .menu-container {
+    position: relative;
     display: flex;
     justify-content: center; 
-    gap: 40px;
+    gap: 160px;
     margin-top: 0; 
+    font-size: 23px;
 }
 
 .menu-container a {
@@ -777,6 +779,7 @@ header {
 }
 
 .h1 {
+    max-width: 250px;
     display: inline-block;
     max-width: 25ch;
     overflow-wrap: break-word;

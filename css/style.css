@@ -772,10 +772,9 @@ header {
 
 .menu-container {
     width: 100%;
-    position: static;
+    position: relative;
     display: flex;
     justify-content: center; 
-    gap: 160px;
     margin-top: 0; 
     font-size: 23px;
 }

@@ -754,7 +754,7 @@ header {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    padding: 20px 0; 
+    padding: 20px; 
 }
 
 .logo {
@@ -770,7 +770,8 @@ header {
 
 
 .menu-container {
-    position: relative;
+    width: 100%;
+    position: static;
     display: flex;
     justify-content: center; 
     gap: 160px;
@@ -779,9 +780,13 @@ header {
 }
 
 .menu-container a {
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
     text-decoration: none; 
     color: black; 
     font-size: 1.2em; 
+    border-bottom: 3px solid #F2F2F2;
 }
 
 .menu-container a:hover {
@@ -794,8 +799,11 @@ h1 {
     display: inline-block;
     max-width: 25ch;
     overflow-wrap: break-word;
-    text-align: start;
     margin-top: 50px;
+}
+
+.h1, p {
+    text-align: left;
 }
 
 .info {
@@ -815,7 +823,7 @@ h1 {
 .filters {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
@@ -827,8 +835,8 @@ h1 {
 
 .filter-options {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     gap: 10px;
 }
 
@@ -840,6 +848,7 @@ h1 {
 }
 
 .hebergements {
+    order: 2;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -856,11 +865,12 @@ h1 {
 
 .card {
     width: 100%;
-    max-width: 250px; 
-    margin-bottom: 20px;
+    max-width: 335px; 
+    margin-bottom: 15px;
 }
 
 .populaires{
+    order: 1;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -871,6 +881,9 @@ h1 {
 
 .hebergements,
 .populaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%; 
     margin-top: 20px;
     box-sizing: border-box;
@@ -882,6 +895,7 @@ h1 {
     padding: 0 10px;
     width: 100%;
     box-sizing: border-box;
+    align-items: center;
 }
 
 
@@ -919,6 +933,11 @@ h1 {
 
 .populaires-cards {
     width: 100%;
+    max-width: 335px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+    align-items: center;
 }
 
 
@@ -930,10 +949,13 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    gap: 10px;
+    width: 100%;
 }
 
 
 .footer-container {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;

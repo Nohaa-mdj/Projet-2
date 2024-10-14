@@ -763,9 +763,11 @@ header {
     margin-bottom: 10px; 
 }
 
-.info i {
-    display: none;
+.search-section {
+    display: flex;
+    align-items: start;
 }
+
 
 .menu-container {
     position: relative;
@@ -792,8 +794,15 @@ h1 {
     display: inline-block;
     max-width: 25ch;
     overflow-wrap: break-word;
-    text-align: center;
+    text-align: start;
     margin-top: 50px;
+}
+
+.info {
+    display: flex;
+    align-items: start;
+    max-width: 34ch;
+    overflow-wrap: break-word;
 }
 
 

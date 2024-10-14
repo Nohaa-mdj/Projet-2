@@ -493,7 +493,7 @@ a {
 .populaires-title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     margin-top: 40px;
 }
 
@@ -750,6 +750,7 @@ img, section {
     flex-direction: column;
 }
 
+
 header {
     display: flex;
     flex-direction: column; 
@@ -843,7 +844,6 @@ h1 {
 .hebergements-and-populaires{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
 }
 
@@ -873,17 +873,22 @@ h1 {
     order: 1;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
     width: 100%;
 }
 
+.populaires-title h2 {
+    text-align: left;
+}
 
+.populaires-title i {
+    margin-left: 40px;
+}
 
 .hebergements,
 .populaires {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 100%; 
     margin-top: 20px;
     box-sizing: border-box;

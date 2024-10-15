@@ -443,7 +443,6 @@ a {
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -454,6 +453,7 @@ a {
     width: 67%;
     margin: 0;
     min-height: auto;
+    background-color: var(--main-bg-color);
 }
 
 /****** Populaires ***********/
@@ -461,6 +461,7 @@ a {
     width: 32%;
     margin: 0;
     min-height: auto;
+    background-color: var(--main-bg-color);
 }
 
 
@@ -557,7 +558,7 @@ a {
 .activites-card {
     flex: 1;
     flex-direction: column;
-    max-width: 250px;
+    width: 250px;
     border-radius: 20px; 
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden; 
@@ -648,7 +649,7 @@ footer {
 
 .hebergements-and-populaires {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     gap: 10px;
     overflow: hidden;
@@ -730,6 +731,10 @@ img, section {
 
 @media (max-width: 1220px) and (min-width: 1020px) {
 
+.hebergements-and-populaires {
+    overflow: hidden;
+}
+
 .activites-grid-container {
     grid-template-columns: repeat(4, 1fr); 
     overflow: hidden;
@@ -744,6 +749,12 @@ img, section {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) { 
+
+.main { 
+    display: flex;
+    flex-direction: column;
+}
+
 
 .search-section {
     display: flex;
@@ -766,7 +777,7 @@ header {
 
 .search-section {
     display: flex;
-    align-items: start;
+    align-items: center;
 }
 
 
@@ -774,7 +785,7 @@ header {
     width: 100%;
     position: relative;
     display: flex;
-    justify-content: center; 
+    align-items: center; 
     margin-top: 0; 
     font-size: 23px;
 }
@@ -808,13 +819,17 @@ h1 {
 
 .info {
     display: flex;
-    align-items: start;
+    align-items: center;
     max-width: 34ch;
     overflow-wrap: break-word;
 }
 
 
 .activites-card {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    width: 100%;
     justify-content: center; 
     margin-right: 0; 
 }
@@ -843,15 +858,17 @@ h1 {
 .hebergements-and-populaires{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
 .hebergements {
     order: 2;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: white;
 }
 
 .container {
@@ -864,8 +881,11 @@ h1 {
 
 .card {
     width: 100%;
-    max-width: 335px; 
     margin-bottom: 15px;
+}
+
+.h2 {
+    align-items: flex-start;
 }
 
 .populaires{
@@ -873,6 +893,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+    background-color: var(--main-bg-color);
 }
 
 .populaires-title h2 {
@@ -887,7 +908,7 @@ h1 {
 .populaires {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 100%; 
     margin-top: 20px;
     box-sizing: border-box;
@@ -905,7 +926,6 @@ h1 {
 
 .card {
     width: 100%;
-    max-width: 300px;
     height: auto;
     max-height: 200px; 
 }
@@ -918,7 +938,6 @@ h1 {
 
 .cards {
     flex: 1 1 30%; 
-    max-width: 300px; 
     margin: 10px; 
 }
 
@@ -937,7 +956,7 @@ h1 {
 
 .populaires-cards {
     width: 100%;
-    max-width: 335px;
+    max-height: 2OOpx;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 15px;
@@ -947,6 +966,17 @@ h1 {
 
 .populaires-cards img {
     height: auto; 
+    max-height: 200px;
+}
+
+.activites {
+    align-items: center;
+}
+
+.activites-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .activites-grid-container {
@@ -955,6 +985,11 @@ h1 {
     align-items: center;
     gap: 10px;
     width: 100%;
+}
+
+.activite-card img {
+    width: 100%;
+    height: 100px;
 }
 
 

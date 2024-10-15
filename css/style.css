@@ -841,8 +841,6 @@ h1 {
 
 .info {
     display: flex;
-    align-items: left;
-    max-width: 34ch;
     overflow-wrap: break-word;
 }
 
@@ -982,7 +980,6 @@ h1 {
     max-height: 2OOpx;
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 15px;
     align-items: center;
 }
 

@@ -373,10 +373,14 @@ a {
     transition: transform 0.3s ease;
 }
 
+
 .card {
     transform: scale(1.05);
 }
 
+.card:hover {
+    cursor: pointer;
+}
 
 .card img {
     width: 100%;

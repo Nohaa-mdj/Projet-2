@@ -549,8 +549,8 @@ a {
 }
 
 .activites-grid-container {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    display: flex;
+    flex-direction: row;
     gap: 20px; 
 }
 
@@ -647,6 +647,11 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) and (min-width: 769px) {
 
+.body {
+    width: 100%;
+}
+
+
 .hebergements-and-populaires {
     display: flex;
     flex-direction: row;
@@ -718,12 +723,14 @@ img, section {
 }
 
 .main-container {
+    display: flex;
     flex-direction: column;        
     padding: 0 20px;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
+
 }
 
 
@@ -808,7 +815,6 @@ header {
 
 h1 {
     display: inline-block;
-    max-width: 25ch;
     overflow-wrap: break-word;
     margin-top: 50px;
 }

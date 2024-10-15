@@ -806,6 +806,7 @@ header {
 
 .menu-container {
     width: 100%;
+    min-width: 320px;
     position: relative;
     display: flex;
     align-items: center; 

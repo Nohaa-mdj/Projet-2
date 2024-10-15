@@ -777,7 +777,7 @@ header {
 
 .search-section {
     display: flex;
-    align-items: center;
+    align-items: left;
 }
 
 
@@ -819,7 +819,7 @@ h1 {
 
 .info {
     display: flex;
-    align-items: center;
+    align-items: left;
     max-width: 34ch;
     overflow-wrap: break-word;
 }
@@ -828,7 +828,7 @@ h1 {
 .activites-card {
     display: flex;
     flex-direction: column;
-    max-height: 300px;
+    max-height: 420px;
     width: 100%;
     justify-content: center; 
     margin-right: 0; 
@@ -866,9 +866,12 @@ h1 {
     order: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 20px;
     background-color: white;
+}
+
+.h2 {
+    align-items: left;
 }
 
 .container {
@@ -908,7 +911,6 @@ h1 {
 .populaires {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%; 
     margin-top: 20px;
     box-sizing: border-box;
@@ -943,7 +945,6 @@ h1 {
 
 .section-title {
     font-size: 16px;
-    text-align: center;
 }
 
 .card-title {

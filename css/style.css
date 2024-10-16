@@ -490,6 +490,11 @@ a {
     margin-right: 20px; 
 }
 
+.card {
+    height: 250px;
+    overflow: hidden;
+}
+
 .populaires {
     flex: 1; 
     min-width: 350px;
@@ -759,7 +764,7 @@ img, section {
 
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 768px) { 
+@media (max-width: 768px) and (min-width: 320px) { 
 
 .main { 
     display: flex;

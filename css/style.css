@@ -809,7 +809,7 @@ header {
 
 .search-section {
     display: flex;
-    align-items: left;
+    align-items: flex-start;
 }
 
 
@@ -868,7 +868,7 @@ h1 {
 .filters {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
@@ -901,7 +901,7 @@ h1 {
 }
 
 .h2 {
-    align-items: left;
+    align-items: flex-start;
 }
 
 .container {
@@ -987,7 +987,7 @@ h1 {
 
 .populaires-cards {
     width: 100%;
-    max-height: 2OOpx;
+    max-height: 200px;
     margin-right: 0;
     margin-left: 0;
     align-items: center;

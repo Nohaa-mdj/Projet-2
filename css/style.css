@@ -669,7 +669,7 @@ footer {
     min-width: 100%; 
     flex-direction: column;
 }
-    
+  
 .populaires {
     flex: 1; 
     min-width: 100%;
@@ -989,7 +989,7 @@ h1 {
 }
 
 .populaires-cards img {
-    height: auto; 
+    height: 136px; 
     max-height: 200px;
 }
 

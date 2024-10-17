@@ -212,9 +212,8 @@ p {
 
 
   .filter-button:hover {
-    background-color: var(--main-color);
+    background-color: rgba(192, 218, 230, 0.5);
     color: white;
-    border-color: #3498db;
 }
 
 

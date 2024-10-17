@@ -819,6 +819,11 @@ header {
     align-items: flex-start;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
 
 .menu-container {
     width: 100%;
@@ -838,6 +843,7 @@ header {
     color: black; 
     font-size: 1.2em; 
     border-bottom: 3px solid #F2F2F2;
+    justify-content: center;
 }
 
 .menu-container a:hover {

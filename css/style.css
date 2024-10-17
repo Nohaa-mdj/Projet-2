@@ -55,7 +55,7 @@ p {
 
 
 .menu-container {
-    position: relative;
+    position: absolute;
     top: 20px;
     right: 20px;
     display: flex;
@@ -216,7 +216,7 @@ p {
 
   .filter-button:hover {
     background-color: rgba(192, 218, 230, 0.5);
-    color: white;
+    color: black;
 }
 
 
@@ -550,6 +550,7 @@ a {
 
 .activites {
     margin-top: 40px;
+    width: 100%;
 }
 
 .activites-container {
@@ -566,8 +567,9 @@ a {
 
 
 .activites-card {
+    display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: row;
     width: 250px;
     border-radius: 20px; 
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);

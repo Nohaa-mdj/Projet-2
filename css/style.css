@@ -61,6 +61,7 @@ p {
 
 
 .menu-container a:hover {
+    display: flex;
     border-top: 1.5px solid #0065FC;
     text-align: center;
     margin-top: 30px;
@@ -929,11 +930,6 @@ h1 {
     background-color: var(--main-bg-color);
 }
 
-.populaires-cards {
-    display: inline-flex;
-    width: 27%;
-    margin: 0 0 0.625rem 1.750rem;
-}
 
 .populaires-title h2 {
     text-align: left;
@@ -996,6 +992,7 @@ h1 {
     margin-right: 0;
     margin-left: 0;
     align-items: center;
+    flex-direction: column;
 }
 
 .populaires-cards img {

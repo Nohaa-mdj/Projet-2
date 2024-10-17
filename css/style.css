@@ -88,7 +88,7 @@ p {
 
 .info i {
     background-color: white;
-    color: #007bff;
+    color: #0065FC;
     margin-right: 8px;
 }
 
@@ -146,7 +146,7 @@ p {
 }
 
 .search-container button {
-    background-color: #007bff;
+    background-color: #0065FC;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -160,7 +160,7 @@ p {
 }
 
 .search-container button:hover {
-    background-color: #0056b3; 
+    background-color: #0065FC; 
 }
 
 .search-container input::placeholder {
@@ -193,7 +193,7 @@ p {
 }
 
 .filter-button i {
-    color: #007BFF;
+    color: #0065FC;
     margin-right: 8px;
 }
 
@@ -214,7 +214,7 @@ p {
 
 
   .filter-button:hover {
-    background-color: rgba(192, 218, 230, 0.5);
+    background-color: #DEEBFF;
     color: black;
 }
 
@@ -231,7 +231,7 @@ p {
 }
 
 .filter-button.selected {
-    background-color: #e0ebff;
+    background-color: #DEEBFF;
     border: 1px solid var(--main-color);
 }
 
@@ -366,7 +366,7 @@ a {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-direction: column;
@@ -420,7 +420,6 @@ a {
 
 .stars {
     font-size: 14px;
-    color: #ffd700; 
 }
 
 .load-more {
@@ -592,8 +591,8 @@ a {
 
 
 footer {
-    background-color: #f5f5f7; 
-    border-top: 5px solid #f5f5f7; 
+    background-color: #F2F2F2; 
+    border-top: 5px solid #F2F2F2; 
     padding: 20px 0;
     margin-top: 50px;
     color: #000;
@@ -675,7 +674,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 200px;
+    min-height: 150px;
     height: auto;
     margin-top: 20px;
 }
@@ -685,7 +684,7 @@ footer {
     flex: 1 1 0; 
     margin: 0 10px; 
     box-sizing: border-box; 
-    max-width: 90%; 
+    max-width: 100%; 
 }
 
 .populaires-cards .card-title {

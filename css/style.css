@@ -924,6 +924,12 @@ h1 {
     background-color: var(--main-bg-color);
 }
 
+.populaires-cards {
+    display: inline-flex;
+    width: 27%;
+    margin: 0 0 0.625rem 1.750rem;
+}
+
 .populaires-title h2 {
     text-align: left;
 }

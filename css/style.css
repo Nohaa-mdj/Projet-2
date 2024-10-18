@@ -829,6 +829,7 @@ header {
     align-items: center; 
     margin-top: 0; 
     font-size: 23px;
+    right: 0;
 }
 
 .menu-container a {

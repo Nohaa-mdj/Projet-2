@@ -19,6 +19,11 @@ html, body {
     overflow-x: hidden; 
 }
 
+.main {
+    gap: 10px;
+}
+
+
 body {
     display: flex;
     justify-content: center;
@@ -471,7 +476,7 @@ a {
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    flex-basis: 32%;
     margin: 0;
     min-height: auto;
     background-color: var(--main-bg-color);
@@ -686,7 +691,6 @@ footer {
 }
   
 .populaires {
-    flex: 1; 
     min-width: 100%;
 }
 
@@ -777,6 +781,7 @@ img, section {
 .main { 
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 
@@ -902,6 +907,16 @@ h1 {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     width: 100%;
+}
+
+.hebergements-and-populaires .populaires section {
+    padding: 0;
+    width: 100%;
+}
+
+.populaires {
+    width: 100%;
+    max-width: 100%;
 }
 
 .hebergements-and-populaires{
